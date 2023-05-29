@@ -65,7 +65,7 @@ for f in filters:
     timeStamp(f"Performing @Focus2 with filter {num2f[f]}...")
     focPos = focus2("Here", f)
     with open(path_to_data+f"focPos{num2f[f]}", "w") as file:
-        file.write(focPos)
+        file.write(str(focPos))
 
 
 # Identifies focuser motion methods

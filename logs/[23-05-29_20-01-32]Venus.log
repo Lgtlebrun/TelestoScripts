@@ -1,0 +1,10 @@
+[20:01:32] Routine launched with following initial parameters:
+Exposure : 1.5 s
+defocus : 10 steps
+Target : Venus
+Reference star : TYC 1914-1694-1
+Binning : 1x1
+Filters : B, V, R, I
+Taking pictures as long as target is visible.
+Waiting for Venus to show above horizon...
+[20:01:33] Target has shown up. Slewing to target...

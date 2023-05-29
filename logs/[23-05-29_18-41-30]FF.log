@@ -1,0 +1,6 @@
+WARNING : Focuser position for filter B not stored in data. Focpos set to default value {focDefault}
+WARNING : Focuser position for filter V not stored in data. Focpos set to default value {focDefault}
+WARNING : Focuser position for filter R not stored in data. Focpos set to default value {focDefault}
+WARNING : Focuser position for filter I not stored in data. Focpos set to default value {focDefault}
+WARNING : focMoveIn direction was not determined beforehand to running this script. Determining it now.
+ERROR : focMoveIn direction could not be determined. Aborting...

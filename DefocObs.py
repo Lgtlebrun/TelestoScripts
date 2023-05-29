@@ -88,20 +88,13 @@ num2f = {filters[i]: filterNames[i] for i in range(len(filters))}
 # ------------ DEFINITIONS -----------------
 
 
-def TakePicWithDefocus(target, expT, defocus, numFil):
+def TakePicWithDefocus(expT, defocus, numFil):
     
-    """Takes a picture of target with a defocus"""
+    """Takes a picture of target with a defocus"""  
     
-    if target != "here":
-        CLS(target, numFil)     # Closed loop Slew to target (more precise)
-    resFocus = focus3(expT, f)       #Focus with @focus3
-    
-    if "error" not in resFocus:
-        TSXSend(f"ccdsoftCamera.focMoveOut({defocus})")     #defocus
-        return TakePic(expT, numFil, binning)
-    else : 
-        console(f"ERROR : @focus3 failed on filter {num2f[f]}")
-        return -1
+    TSXSend(f"ccdsoftCamera.focMoveOut({defocus})")     #defocus
+    return TakePic(expT, numFil, binning)
+   
     
 def checkSaturation(pic):
     
@@ -125,13 +118,12 @@ while not isVisible(target):
     time.sleep(5)
 
 timeStamp("Target has shown up. Slewing to target...")
-slewTarget(target)              # Goes to target
 
 #--------- DOUBLE CHECK OF INITIAL PARAMETERS ------------
 
 TSXSend("ccdsoftCamera.Frame = 1")      # Sets back the frame to light
 
-
+setFocPos(3000)
 defocus = dict()
     
 for f in filters:
@@ -139,12 +131,14 @@ for f in filters:
         
         while not doubleCheck :
             
+            slewTarget(target)              # Goes to target
             defocus[f] = defocusInit
-            pic = TakePicWithDefocus(target, expT, defocus[f], f)
+            pic = TakePicWithDefocus(expT, defocus[f], f)
+            TSXSend(f"ccdsoftCamera.focMoveIn({defocus[f]})")
         
             if not checkSaturation(pic) : 
-                defocus[f] += 1                # Increase defocus if pic saturated
-                timeStamp(f"Filter {f} saturated, defocus increased by 1")
+                defocus[f] += 10                # Increase defocus if pic saturated
+                timeStamp(f"Filter {num2f[f]} saturated, defocus increased by 10")
             else : doubleCheck = True
             
 
@@ -160,8 +154,7 @@ while isVisible(target and loop):
     #CLS(referenceStar, 0)
     slewTarget(referenceStar)
     for f in filters:
-           
-        focus3(expT, f)
+        
         pic = TakePic(expT, f, binning)
         timeStamp(f"Picture of reference star taken in filter {num2f[f]} at path {pic}")
     
@@ -169,10 +162,10 @@ while isVisible(target and loop):
     
     for f in filters :
         slewTarget(target)      # Slew to target 
-        focus3(expT, f)
-        TakePicWithDefocus("here", expT, defocus[f], f)     # "here" avoids CLS again
+        TakePicWithDefocus(expT, defocus[f], f)     # "here" avoids CLS again
         timeStamp(f"Picture of target taken in filter {num2f[f]} at path {pic}")
-
+        
+        TSXSend(f"ccdsoftCamera.focMoveIn({defocus[f]})")
 
 
 #Close logs

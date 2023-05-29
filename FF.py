@@ -198,19 +198,6 @@ def spiralCoords(theta, constA):
     
     return RA, dec
 
-def setFocPos(focPos):
-    currentFocPos = TSXSend("ccdsoftCamera.focPosition")
-    
-    if focPos > currentFocPos:
-        if focMoveIn == "+":
-            return TSXSend(f"ccdsoftCamera.focMoveIn({focPos-currentFocPos})")
-        else:
-            return TSXSend(f"ccdsoftCamera.focMoveOut({focPos-currentFocPos})")
-    elif focPos < currentFocPos:
-        if focMoveIn == "+":
-            return TSXSend(f"ccdsoftCamera.focMoveOut({currentFocPos-focPos})")
-        else:
-            return TSXSend(f"ccdsoftCamera.focMoveIn({currentFocPos-focPos})")
 
 #%%
 # --------------------------MAIN-----------------------------------

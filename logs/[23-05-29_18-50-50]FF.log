@@ -1,0 +1,18 @@
+WARNING : Focuser position for filter B not stored in data. Focpos set to default value {focDefault}
+WARNING : Focuser position for filter V not stored in data. Focpos set to default value {focDefault}
+WARNING : Focuser position for filter R not stored in data. Focpos set to default value {focDefault}
+WARNING : Focuser position for filter I not stored in data. Focpos set to default value {focDefault}
+[18:50:50] FF.py launched with following parameters:
+
+(RA, dec) coordinates : (9.157996254788994, 14.115278467433166)
+Time : dawn
+Exposure time : 0.5
+Median exposure comprised between 25000 and 30000 DN
+Spiralic pattern parameter : 0.05
+
+Slewing to the start location...
+
+[18:50:54] Waiting for sky illumination to reach target level...
+Test picture taken and saved at : Y:\data\20230529\flat.20230529.00006857.fits
+Measured exposure : 65535.0
+Test picture deleted at : Y:\data\20230529\flat.20230529.00006857.fits

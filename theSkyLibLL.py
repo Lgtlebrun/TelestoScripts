@@ -32,6 +32,7 @@ import os
 import re
 import time
 from PySkyX_ks.library.PySkyX_ks import *
+from astropy.io import fits
 
 
 path_to_JS = "./JS_scripts/"
@@ -141,7 +142,7 @@ def focus2(target, filterNum):
  
     if TSXSend("SelectedHardware.filterWheelModel") != "<No Filter Wheel Selected>":
         TSXSend("ccdsoftCamera.filterWheelConnect()")	
-        TSXSend("ccdsoftCamera.FilterIndexZeroBased = " + filterNum) 
+        TSXSend("ccdsoftCamera.FilterIndexZeroBased = " + str(filterNum)) 
         
         
     
@@ -258,6 +259,15 @@ def RemovePic(full_path):
     os.remove(full_path)
     
 
+def setFocPos(focPos):
+    currentFocPos = int(TSXSend("ccdsoftCamera.focPosition"))
+    
+    if focPos > currentFocPos:
+        
+        return TSXSend(f"ccdsoftCamera.focMoveOut({focPos-currentFocPos})")
+    elif focPos < currentFocPos:
+        
+        return TSXSend(f"ccdsoftCamera.focMoveIn({currentFocPos-focPos})")
 
 
 def slewTo(RA, dec):
