@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Hack to process a set of subdirectories.
+# There is no child-proofing, so use with care.
+#
+# Ken Sturrock
+# December 15, 2019
+#
+
+cd $1
+
+for dirName in $(ls -d */)
+do
+	/Users/ks/Desktop/PySkyX_ks/analyze_ds.py $dirName*.fit
+	cat $dirName/ds_measures.csv | grep -v "Discoverer" >> combined_ds_measures.csv
+done
+
+

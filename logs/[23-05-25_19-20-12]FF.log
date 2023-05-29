@@ -1,0 +1,21 @@
+[19:20:12] FF.py launched with following parameters:
+
+(RA, dec) coordinates : (16.0, 62.0)
+Time : dawn
+Exposure time : 0.25
+Median exposure comprised between 25000 and 30000 DN
+Spiralic pattern parameter : 0.05
+
+Slewing to the start location...
+
+[19:20:16] Waiting for sky illumination to reach target level...
+[19:20:29] Flat field acquisition started for filter B
+[19:20:56] B filter : 3 pictures taken
+[19:20:59] Waiting for sky illumination to reach target level...
+[19:21:19] Flat field acquisition started for filter V
+[19:21:56] V filter : 4 pictures taken
+[19:22:00] Waiting for sky illumination to reach target level...
+[19:22:31] Flat field acquisition started for filter R
+[19:25:31] R filter : 17 pictures taken
+[19:25:36] Waiting for sky illumination to reach target level...
+[19:25:49] Flat Field Acquisition complete.

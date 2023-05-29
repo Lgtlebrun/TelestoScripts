@@ -1,0 +1,82 @@
+[19:05:02] FF.py launched with following parameters:
+
+(RA, dec) coordinates : (16.0, 62.0)
+Time : dawn
+Exposure time : 0.05
+Mean exposure comprised between 25000 and 30000 DN
+Spiralic pattern parameter : 0.05
+
+Slewing to the start location...
+
+[19:05:05] Waiting for sky illumination to reach target level...
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006094.fits
+[19:05:17] Flat field acquisition started for filter B
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006095.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006096.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006097.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006098.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006099.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006100.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006101.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006102.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006103.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006104.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006104.fits
+[19:07:00] B filter : 10 pictures taken
+[19:07:03] Waiting for sky illumination to reach target level...
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006105.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006105.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006106.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006106.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006107.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006107.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006108.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006108.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006109.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006109.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006110.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006110.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006111.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006111.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006112.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006112.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006113.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006113.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006114.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006114.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006115.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006115.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006116.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006116.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006117.fits
+[19:09:28] Flat field acquisition started for filter V
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006118.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006119.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006120.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006121.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006122.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006123.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006124.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006125.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006126.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006126.fits
+[19:10:56] V filter : 9 pictures taken
+[19:11:00] Waiting for sky illumination to reach target level...
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006127.fits
+[19:11:08] Flat field acquisition started for filter R
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006128.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006129.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006130.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006131.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006132.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006133.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006134.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006135.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006136.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006137.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006137.fits
+[19:12:48] R filter : 10 pictures taken
+[19:12:52] Waiting for sky illumination to reach target level...
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006138.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006138.fits
+[19:13:05] Flat Field Acquisition complete.

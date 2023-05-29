@@ -1,0 +1,10 @@
+[18:22:25] Routine launched with following initial parameters:
+Exposure : 1 s
+defocus : 0 steps
+Target : Venus
+Reference star : Moon
+Binning : 1x1
+Filters : B, V, R, I
+Taking pictures as long as target is visible.
+Waiting for Venus to show above horizon...
+[18:22:27] Target has shown up. Slewing to target...

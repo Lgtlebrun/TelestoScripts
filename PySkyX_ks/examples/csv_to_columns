@@ -1,0 +1,72 @@
+#!/bin/bash
+
+# Q&D bash program for converting CSV files from reduce_ds.py into 
+# a pretty tabbed & aligned TXT file.
+#
+# Ken Sturrock
+# December 17, 2022
+#
+
+# simplify by pulling out the diagnostic columns
+
+# Trad Name
+cat $1 | cut -d"," -f1 > col01.tmp
+
+cat col01.tmp | cut -d" " -f2,3,4 > col02-2.tmp
+
+mv col02-2.tmp col02.tmp
+
+# Coord Name
+cat $1 | cut -d"," -f2 > col01.tmp
+
+# Components
+cat $1 | cut -d"," -f3 > col03.tmp
+
+# Num of Images
+cat $1 | cut -d"," -f9 > col04.tmp
+
+# Mean Timestamp
+cat $1 | cut -d"," -f4 > col05.tmp
+
+# Primary RA
+cat $1 | cut -d"," -f5 > col06.tmp
+
+# Primary Dec
+cat $1 | cut -d"," -f6 > col07.tmp
+
+# Secondary RA
+cat $1 | cut -d"," -f7 > col08.tmp
+
+# Secondary Dec
+cat $1 | cut -d"," -f8 > col09.tmp
+
+# Median PA
+cat $1 | cut -d"," -f14 > col10.tmp
+
+# PA SD
+cat $1 | cut -d"," -f10 > col11.tmp
+
+# Median Sep
+cat $1 | cut -d"," -f15 > col12.tmp
+
+# Sep SD
+cat $1 | cut -d"," -f11 > col13.tmp
+
+paste -d"," col??.tmp > cols.tmp
+
+
+
+
+
+# Convert commas to tabs
+cat cols.tmp | tr "," "\t" > $1.tsv
+
+# fix column alignments with extra tabs
+column -t -s $'\t' $1.tsv > $1.tmp
+
+# convert UNIX format to Windows/DOS format for mortals.
+awk -v ORS='\r\n' '1' $1.tmp > $1.txt
+
+# Clean up the scratch files.
+rm $1.tsv $1.tmp col*.tmp
+

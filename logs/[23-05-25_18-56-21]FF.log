@@ -1,0 +1,15 @@
+[18:56:21] FF.py launched with following parameters:
+
+(RA, dec) coordinates : (16.0, 62.0)
+Time : dawn
+Exposure time : 0.2
+Mean exposure comprised between 25000 and 30000 DN
+Spiralic pattern parameter : 0.05
+
+Slewing to the start location...
+
+[18:56:24] Waiting for sky illumination to reach target level...
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006050.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006050.fits
+Picture taken and saved at : Y:\data\20230525\flat.20230525.00006051.fits
+Picture deleted at : Y:\data\20230525\flat.20230525.00006051.fits
